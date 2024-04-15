@@ -33,7 +33,9 @@ public class LlamadaApi {
         return json;
     }
     public String llamadaConversorDirecto(String monedaBase, String monedaFinal,String cantidad){
-        var direccion = "https://v6.exchangerate-api.com/v6/a5f6fceec983c1c2c7f1a56c/pair/" + monedaBase +"/"+monedaFinal+"/"+cantidad;
+        var apiKey="a5f6fceec983c1c2c7f1a56c";
+        String json;
+        var direccion = "https://v6.exchangerate-api.com/v6/"+ apiKey +"/pair/" + monedaBase +"/"+monedaFinal+"/"+cantidad;
         HttpClient client = HttpClient.newHttpClient();
         //patron builder: Construir algo q tenga una cierta forma
         HttpRequest request = HttpRequest.newBuilder()
@@ -43,14 +45,12 @@ public class LlamadaApi {
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
+        json = response.body();
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        //agregar las exepciones debido a q laburams en internet
-        //System.out.println(response.body());
-        String json = response.body();
 
         return json;
     }
