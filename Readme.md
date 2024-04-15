@@ -24,11 +24,15 @@ Este programa en Java te permite convertir entre diferentes monedas utilizando u
    cd conversor-moneda
    ```
 
-3. Compila el proyecto:
+3. Cambiar API KEY:
+   Debe generar una api key y reemplazarlo en la clase llamada LlamadaApi debido a que puede no estar disponible si lo desea realizar con mi apiKey
 
    ```bash
-   javac -d out src/com/aluracursos/principal/*.java src/com/aluracursos/modelos/*.java
+   35- public String llamadaConversorDirecto(String monedaBase, String monedaFinal,String cantidad){
+   36-     var apiKey="a5f6fceec983c1c2c7f1a56c";
+
    ```
+   
 
 4. Ejecuta el programa:
 
@@ -40,12 +44,11 @@ Este programa en Java te permite convertir entre diferentes monedas utilizando u
 
 ## Créditos
 
-Este programa utiliza la API de conversión de moneda proporcionada por [Nombre de la API](enlace-api).
+Este programa utiliza la API de conversión de moneda proporcionada por [ExchangeRate-API](https://www.exchangerate-api.com/).
 
 ## Contribución
 
 ¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, no dudes en enviar una solicitud de extracción.
 
-## Licencia
-
-[MIT](LICENSE)
+## Conclusion
+   Este codigo forma parte de la plataforma alura Cursos [AluraCursos](https://app.aluracursos.com/dashboard)
