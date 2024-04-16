@@ -42,6 +42,25 @@ Este programa en Java te permite convertir entre diferentes monedas utilizando u
 
 5. Sigue las instrucciones en pantalla para realizar conversiones entre diferentes monedas.
 
+### Ejemplo de modo de uso
+
+#### Menu del programa
+<image src="src/img/Menu.png" alt= "menu principal">
+
+
+#### Ejemplo de USD a ARS 
+
+<image src="src/img/ingreseValor.png" alt= "ingrese moneda base">
+
+#### Ejemplo de convercion exitosa
+
+<image src="src/img/ejemploConvercion.png" alt= "Convercion exitosa">
+
+#### Ejemplo de fin de programa
+
+<image src="src/img/finDelPrograma.png" alt= "Fin de programa">
+
+
 ## Créditos
 
 Este programa utiliza la API de conversión de moneda proporcionada por [ExchangeRate-API](https://www.exchangerate-api.com/).

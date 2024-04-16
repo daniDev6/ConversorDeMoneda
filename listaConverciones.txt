@@ -4,6 +4,6 @@
     "MonedaFinal": "ARS",
     "CantidadBase": 125.0,
     "CantidadFinal": 108093.75,
-    "Tiempo": "2024-04-15 hora: 20:44:44.538340700-03:00[America/Buenos_Aires]"
+    "Tiempo": "2024-04-16 hora: 19:31:19.048897-03:00[America/Buenos_Aires]"
   }
 ]
