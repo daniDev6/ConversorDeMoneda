@@ -1,9 +1,6 @@
 package com.aluracursos.principal;
 
-import com.aluracursos.modelos.Converciones;
-import com.aluracursos.modelos.LlamadaApi;
-import com.aluracursos.modelos.Moneda;
-import com.aluracursos.modelos.Pasaje;
+import com.aluracursos.modelos.*;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -20,6 +17,8 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) throws IOException {
         /*----------------Declaraciones de variables---------------*/
+        String apiKey= AppConfig.getApiKey();
+        System.out.println("Soy tu apikey"+apiKey);
         LlamadaApi llamada = new LlamadaApi();
         Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)

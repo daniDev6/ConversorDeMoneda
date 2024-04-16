@@ -7,7 +7,7 @@ Este programa en Java te permite convertir entre diferentes monedas utilizando u
 
 - Java JDK instalado en tu sistema.
 - Conexión a internet para utilizar la API de conversión de moneda.
-- Link a API : https://www.exchangerate-api.com/
+- Link a API : [Exchangerate-API](https://www.exchangerate-api.com/)
 - Generar una API KEY
 
 ## Instalación y Uso
@@ -25,22 +25,55 @@ Este programa en Java te permite convertir entre diferentes monedas utilizando u
    ```
 
 3. Cambiar API KEY:
-   Debe generar una api key y reemplazarlo en la clase llamada LlamadaApi debido a que puede no estar disponible si lo desea realizar con mi apiKey
+   Debe generar una api key y crear en la raiz del proyecto un archivo .env
 
    ```bash
-   35- public String llamadaConversorDirecto(String monedaBase, String monedaFinal,String cantidad){
-   36-     var apiKey="a5f6fceec983c1c2c7f1a56c";
-
+   API_KEY="debe ingresar aca su api key"
    ```
-   
+4. Debe agregar las dependencias
+   Para hacer esto debe dirigirse a las configuraciones de su aplicacion y agregar 2 dependencias que se encuentran en la carpeta dependecias de 
+   programa
+   ##### En codigo iml
+Deberia quedar similar al siguiente codigo el iml
+```bash
+   <?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dependencias/gson-2.10.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dependencias/java-dotenv-5.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+   ```
 
-4. Ejecuta el programa:
+5. Ejecuta el programa:
 
    ```bash
    java -cp out com.aluracursos.principal.Principal
    ```
 
-5. Sigue las instrucciones en pantalla para realizar conversiones entre diferentes monedas.
+6. Sigue las instrucciones en pantalla para realizar conversiones entre diferentes monedas.
 
 ### Ejemplo de modo de uso
 

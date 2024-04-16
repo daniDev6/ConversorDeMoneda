@@ -33,7 +33,7 @@ public class LlamadaApi {
         return json;
     }
     public String llamadaConversorDirecto(String monedaBase, String monedaFinal,String cantidad){
-        var apiKey="a5f6fceec983c1c2c7f1a56c";
+        String apiKey=AppConfig.getApiKey();
         String json;
         var direccion = "https://v6.exchangerate-api.com/v6/"+ apiKey +"/pair/" + monedaBase +"/"+monedaFinal+"/"+cantidad;
         HttpClient client = HttpClient.newHttpClient();
