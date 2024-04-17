@@ -30,8 +30,11 @@ Este programa en Java te permite convertir entre diferentes monedas utilizando u
    ```bash
    API_KEY="debe ingresar aca su api key"
    ```
+   Muestra de como debe verse en la raiz del programa la creacion del archivo .env respetando el nombre de la variable
+
+   <image src="src/img/archivo.env.png" alt= "muestra de como debe verse">
 4. Debe agregar las dependencias
-   Para hacer esto debe dirigirse a las configuraciones de su aplicacion y agregar 2 dependencias que se encuentran en la carpeta dependecias de 
+   Para hacer esto debe dirigirse a las configuraciones de su aplicacion y agregar 2 dependencias que se encuentran en la carpeta dependecias de
    programa
    ##### En codigo iml
 Deberia quedar similar al siguiente codigo el iml
@@ -81,7 +84,7 @@ Deberia quedar similar al siguiente codigo el iml
 <image src="src/img/Menu.png" alt= "menu principal">
 
 
-#### Ejemplo de USD a ARS 
+#### Ejemplo de USD a ARS
 
 <image src="src/img/ingreseValor.png" alt= "ingrese moneda base">
 
@@ -89,9 +92,10 @@ Deberia quedar similar al siguiente codigo el iml
 
 <image src="src/img/ejemploConvercion.png" alt= "Convercion exitosa">
 
+
 #### Ejemplo de fin de programa
 
-<image src="src/img/finDelPrograma.png" alt= "Fin de programa">
+<image src="src/img/finDelPrograma.png" alt= "Convercion exitosa">
 
 
 ## Créditos
@@ -103,4 +107,4 @@ Este programa utiliza la API de conversión de moneda proporcionada por [Exchang
 ¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, no dudes en enviar una solicitud de extracción.
 
 ## Conclusion
-   Este codigo forma parte de la plataforma alura Cursos [AluraCursos](https://app.aluracursos.com/dashboard)
+Este codigo forma parte de la formacion de la plataforma alura Cursos [AluraCursos](https://app.aluracursos.com/dashboard)
